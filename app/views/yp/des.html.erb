@@ -1,0 +1,9 @@
+<ul>
+	<% @rfd_students %>
+	<% @rfd_students.each do |rfd| %>
+		<li class='frame'>
+			<img class="thumbnail" src='http://codemountain.com/<%= rfd['student']['avatar_url'] %>'>
+			<%= rfd['student']['name'] %>
+		</li>
+	<% end %>
+</ul>

@@ -1,0 +1,9 @@
+<ul>
+	<% @am_students %>
+	<% @am_students.each do |am| %>
+		<li class='frame'>
+			<img class="thumbnail" src='http://codemountain.com/<%= am['student']['avatar_url'] %>'>
+			<%= am['student']['name'] %>
+		</li>
+	<% end %>
+</ul>

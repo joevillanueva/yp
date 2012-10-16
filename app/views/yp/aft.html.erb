@@ -1,0 +1,9 @@
+<ul>
+	<% @pm_students %>
+	<% @pm_students.each do |pm| %>
+		<li class='frame'>
+			<img class='thumbnail' src='http://codemountain.com/<%= pm['student']['avatar_url'] %>'>
+			<%= pm['student']['name'] %>
+		</li>
+	<% end %>
+</ul>
